@@ -20,7 +20,7 @@ function App() {
   const [filteredData, setFilteredData] = useState(data);
 
   const search = (e) =>
-    setFilteredData(data.filter((item) => item.name.includes(e.target.value)));
+    setFilteredData(data.filter((item) => item.name.toLowerCase().includes(e.target.value.toLowerCase()));
 
   return (
     <div className="App">
